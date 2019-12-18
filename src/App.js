@@ -5,10 +5,20 @@ function App() {
   return (
     <div>
       <div>
-        <ToggleSwitch id='id_large' Name='Large Toggle' Small={false} />
+        <ToggleSwitch
+          id='largeToggleSwitch'
+          Name='Large toggleSwitch'
+          Small={false}
+          defaultChecked={true}
+        />
       </div>
       <div>
-        <ToggleSwitch id='id_small' Name='Small Toggle' Small={true} />
+        <ToggleSwitch
+          id='smallToggleSwitch'
+          Name='Small toggleSwitch'
+          Small={true}
+          defaultChecked={false}
+        />
       </div>
     </div>
   );

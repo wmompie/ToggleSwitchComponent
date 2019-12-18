@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ToggleSwitch from './ToggleSwitch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <ToggleSwitch id='id_large' Name='Large Toggle' Small={false} />
+      </div>
+      <div>
+        <ToggleSwitch id='id_small' Name='Small Toggle' Small={true} />
+      </div>
     </div>
   );
 }
